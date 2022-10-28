@@ -61,10 +61,6 @@ main {
   transform: translateY(4px);
 }
 
-.test {
-  position: relative;
-}
-
 .flex {
   display: flex;
   align-items: center;
