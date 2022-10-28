@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">Etch-a-sketch</h1>
+      <!-- <button class="btn btn--description">How it works</button> -->
+      <p class="description hidden">By hovering over the grid</p>
+    </header>
+    <main>
+      <div class="flex">
+        <div id="number">0</div>
+        <input
+          type="range"
+          orient="vertical"
+          min="4"
+          max="100"
+          value="4"
+          id="slider"
+        />
+      </div>
+
+      <div class="buttons">
+        <button class="btn btn--reset">Reset</button>
+        <button class="btn btn--eraser">Eraser</button>
+        <button class="btn btn--rainbow">Rainbow</button>
+      </div>
+    </main>
+    <footer>
+      <p>Made by daniel-neyla</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
