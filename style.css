@@ -21,10 +21,22 @@ main {
   display: none;
 }
 
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
 .title {
   text-align: center;
   padding-top: 35px;
   font-size: 48px;
+}
+
+.edition {
+  font-size: 32px;
+  color: aqua;
 }
 
 .btn {
@@ -37,15 +49,20 @@ main {
   color: black;
   font-weight: bold;
   font-size: 16px;
+  box-shadow: 5px 10px #8888887e;
 }
 
 .btn:hover {
-  box-shadow: 5px 10px #8888887e;
+  /* transform: translateY(-4px); */
 }
 
 .btn:active {
   box-shadow: 3px 6px #666;
   transform: translateY(4px);
+}
+
+.test {
+  position: relative;
 }
 
 .flex {
@@ -56,23 +73,23 @@ main {
   /* position: relative; */
   transform: translate(50%, 50%) rotate(-90deg);
   position: absolute;
-  left: 150px;
-  top: 570px;
+  left: -660px;
+  top: 270px;
 }
 
-.container {
+.board {
   display: grid;
 
   width: 600px;
   height: 600px;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
+  /* grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr); */
+  position: relative;
   margin: 0 auto;
   margin-bottom: 50px;
   box-sizing: border-box;
   border: 20px solid #777;
   box-shadow: 10px 10px #8888887e;
-  position: relative;
 }
 
 #number {
@@ -124,7 +141,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .box {
-  border: 2px solid rgb(191, 191, 191);
+  border: 2px solid rgba(191, 191, 191, 0.05);
   width: 100%;
   height: 100%;
   display: inline-block;

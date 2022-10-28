@@ -10,27 +10,41 @@
 
   <body>
     <header>
-      <h1 class="title">Etch-a-sketch</h1>
+      <div class="heading">
+        <h1 class="title">Etch-a-sketch</h1>
+        <p class="edition">(Aqua Edition)</p>
+      </div>
       <!-- <button class="btn btn--description">How it works</button> -->
       <p class="description hidden">By hovering over the grid</p>
     </header>
     <main>
-      <div class="flex">
-        <div id="number">0</div>
-        <input
-          type="range"
-          orient="vertical"
-          min="4"
-          max="100"
-          value="4"
-          id="slider"
-        />
+      <div class="board">
+        <div class="flex">
+          <div id="number">4</div>
+          <input
+            type="range"
+            orient="vertical"
+            min="4"
+            max="80"
+            value="4"
+            id="slider"
+          />
+        </div>
       </div>
-
       <div class="buttons">
         <button class="btn btn--reset">Reset</button>
-        <button class="btn btn--eraser">Eraser</button>
-        <button class="btn btn--rainbow">Rainbow</button>
+        <button class="btn btn--eraser" onclick="changeColor('white')">
+          Eraser
+        </button>
+        <button class="btn btn--rainbow" onclick="changeColor('rainbow')">
+          Rainbow
+        </button>
+        <button class="btn btn--black" onclick="changeColor('black')">
+          Black
+        </button>
+        <button class="btn btn--aqua" onclick="changeColor('aqua')">
+          Aqua
+        </button>
       </div>
     </main>
     <footer>
